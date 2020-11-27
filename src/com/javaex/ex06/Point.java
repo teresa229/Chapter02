@@ -7,9 +7,9 @@ public class Point {
 	private int y;
 	
 	//생성자
-	public point() {}
+	public Point() {}
 	
-	public point(int x,int y) {
+	public Point(int x,int y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -29,6 +29,25 @@ public class Point {
 
 	public void setY(int y) {
 		this.y = y;
+	}
+
+	//일반 메소드
+	public void draw() {
+		System.out.println("점[x="+ x + " y=" + y +"]을 그렸습니다.");
+	}
+	
+	public void draw(boolean opt) {
+		if(opt==true) {
+			System.out.println("점[x="+ x + " y=" + y +"]을 그렸습니다.");
+		}else {
+			System.out.println("점[x="+ x + " y=" + y +"]을 지웠습니다.");
+		}
+	}
+	
+	@Override
+	public String toString() {
+		return "Point [x=" + x + ", y=" + y + ", getX()=" + getX() + ", getY()=" + getY() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
 	
 

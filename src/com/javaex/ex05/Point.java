@@ -33,7 +33,7 @@ public class Point {
 	
 	//메소드 일반메소드
 	public void draw() {
-		system.out.println("[x=" + x + ",y=" + y + "를 그렸습니다.]")
+		System.out.println("점[x=" + x + ",y=" + y + "]를 그렸습니다.");
 	}
 
 	

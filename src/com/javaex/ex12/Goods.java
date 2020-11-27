@@ -5,13 +5,11 @@ public class Goods {
 	//필드
 	private String name;
 	private int price;
-	private static int totalCount;
 	
 	//생성자
 	public Goods() {}
 	
 	public Goods(String name, int price) {
-		super();
 		this.name = name;
 		this.price = price;
 	}
@@ -31,15 +29,6 @@ public class Goods {
 
 	public void setPrice(int price) {
 		this.price = price;
-	}
-	
-	
-	public static int getTotalCount() {
-		return totalCount;
-	}
-
-	public static void setTotalCount(int totalCount) {
-		Goods.totalCount = totalCount;
 	}
 
 	//일반 메소드

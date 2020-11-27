@@ -30,5 +30,9 @@ public class GoodsApp {
 //		}		
 		goodsArray[i].showInfo();		
 		}
+		
+		//같은 곳을 가리키고 있다.
+		cup.setPrice(9000);
+		System.out.println(goodsArray[2].getPrice());
 	}
 }
