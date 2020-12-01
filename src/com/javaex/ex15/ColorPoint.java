@@ -37,7 +37,7 @@ public class ColorPoint extends Point{
 	}
 */
 	System.out.println("포인트:" + x + "," + y + "색상:"+color);	
-	}	
+	}	//protected로 바뀌어 가능함.ㄴ
 	
 	@Override
 	public String toString() {
