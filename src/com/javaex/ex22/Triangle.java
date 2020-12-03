@@ -1,15 +1,13 @@
-package com.javaex.ex21;
+package com.javaex.ex22;
 
-public class Triangle extends Shape {
+public class Triangle extends Shape implements Drawable {
 
 	//필드 
 	private int width;
 	private int height;
 	
 	//생성자
-	public Triangle() {
-		super();
-	}
+	public Triangle() {}
 	
 	public Triangle(String fillcolor, String linecolor, int width, int height) {
 		super(fillcolor,linecolor);

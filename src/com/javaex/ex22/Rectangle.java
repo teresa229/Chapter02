@@ -1,17 +1,13 @@
-package com.javaex.ex21;
+package com.javaex.ex22;
 
-public class Triangle extends Shape {
+public class Rectangle extends Shape implements Drawable {
 
-	//필드 
+	//필드
 	private int width;
 	private int height;
 	
 	//생성자
-	public Triangle() {
-		super();
-	}
-	
-	public Triangle(String fillcolor, String linecolor, int width, int height) {
+	public Rectangle(String fillcolor, String linecolor, int width, int height) {
 		super(fillcolor,linecolor);
 		this.width = width;
 		this.height = height;
@@ -36,11 +32,11 @@ public class Triangle extends Shape {
 	
 	//메소드 일반
 	public void draw() {
-		System.out.println("삼각형- 면색:" + fillcolor + ", 선색:"+ linecolor + ", 가로:" + width + ", 세로:" + height);
+		System.out.println("사각형- 면색:" + fillcolor + ", 선색:"+ linecolor + ", 가로:" + width + ", 세로:" + height);
 	}
 	
 	public double area() {
-		return width * height/2;
+		return width * height;
 	}
-	
 }
+
